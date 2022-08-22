@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand&display=swap');
+
+body {
+  background-color: #08080e;
+  color: #e7e7e9;
+  font-family: 'Inter', sans-serif;
+}
+
+/* home header style */
+
+@media screen and (min-width: 1100px) {
+  .home-header .content .text p { 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    width: 40rem;
+    text-align: justify;
+  }
+  
+}
+
+@media screen and (max-width: 1100px) {
+  .home-header .content .text p { 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    width: 30rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-header .content .text p { 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    width: 100%;
+    text-align: justify;
+  }
+  
+  .home-header .content .actions { 
+    margin-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
+.home-header {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 10rem;
+}
+
+.home-header .content {
+  -webkit-padding-before: 8rem;
+  padding-block-start: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.home-header .content .actions { 
+  margin-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 20rem;
+}
+
+
+
+.home-header .content .actions .btn-about {
+  font-weight: 600;
+  color: var(--button-text);
+  background: rgba(41, 41, 41, 0.2);
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all .1s;
+  height: 4rem;
+}
+
+.home-header .content .actions .btn-about:hover {
+  background: rgba(89, 89, 89, 0.2);
+}
+
+
+.home-header .content .actions .btn-twitter {
+  margin: 24px 0;
+  font-weight: 600;
+  color: var(--button-text);
+  text-decoration: none;
+  border: 1px solid;
+  border-color:transparent;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all .1s;
+  height: 4rem;
+}
+
+.home-header .content .actions .btn-twitter:hover {
+    border-color: #24242c;
+}
